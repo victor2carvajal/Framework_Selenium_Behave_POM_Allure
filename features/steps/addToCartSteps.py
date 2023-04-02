@@ -1,44 +1,37 @@
 from behave import *
 from selenium import webdriver
-from features.pages.homePage import HomePage
-from features.pages.productPage import ProductPage
-from features.pages.cartPage import CartPage
-
-url = "https://www.amazon.com/-/es/"
-productOne = "iphone 14 pro"
-productTwo = "washing machine"
-descendingIndex = 1
-time = 10
-deleteMessageExpected = "se ha eliminado del Carrito."
-deleteMessageExpected2 = "loca"
-driver = ""
+from features.pages.home_page import HomePage
+from features.pages.product_page import ProductPage
+from features.pages.cart_page import CartPage
+from features.messages import verify_messages
+from features.utils import constant
 
 
-@given(u'the user is at home page')
-def step_impl(context):
+@given(u'the user is at "{home_page}"')
+def step_impl(context, home_page):
     context.driver = webdriver.Chrome()
-    HomePage.open_page(context.driver, url)
+    HomePage.open_page(context.driver, home_page)
 
 
-@when(u'user search a new product')
-def step_impl(context):
-    HomePage.search_product(context.driver, productOne)
+@when(u'user search a new "{product}"')
+def step_impl(context, product):
+    HomePage.search_product(context.driver, product)
 
 
-@when(u'sort by decent order the list')
-def step_impl(context):
-    ProductPage.sort_by(context.driver, descendingIndex)
+@when(u'sort by "{index}" order the list')
+def step_impl(context, index):
+    ProductPage.sort_by(context.driver, index)
 
 
 @when(u'add the product')
 def step_impl(context):
-    ProductPage.select_product(context.driver, time)
+    ProductPage.select_product(context.driver, constant.ten)
     ProductPage.add_to_cart(context.driver)
-    CartPage.verify_add(context.driver, time)
+    ProductPage.go_to_cart_click_mouse(context.driver, constant.ten)
+    CartPage.verify_add(context.driver, constant.ten)
 
 
 @then(u'delete de product')
 def step_impl(context):
-    ProductPage.go_to_cart_click_mouse(context.driver, time)
     CartPage.delete_product(context.driver)
-    CartPage.verify_delete(context.driver,deleteMessageExpected)
+    CartPage.verify_delete(context.driver, verify_messages.deleteMessage)

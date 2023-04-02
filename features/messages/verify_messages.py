@@ -1,0 +1,1 @@
+deleteMessage = "se ha eliminado del Carrito."

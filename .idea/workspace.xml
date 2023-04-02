@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f1588c1-c4ea-4d13-8b54-b3313acd9edf" name="Changes" comment="" />
+    <list default="true" id="6f1588c1-c4ea-4d13-8b54-b3313acd9edf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/features/pages/cart_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/pages/home_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/pages/product_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/addToCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/addToCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/messages/verify_messages.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/messages/verify_messages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/pages/cartPage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/pages/homePage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/pages/productPage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/addToCartSteps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/addToCartSteps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/utils/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/utils/constant.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="9e26844ec638f55627b4a3edf71b3335718b4a4f" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2Nm3t7K0nmURCwTtFrJeOsJRiRn" />
@@ -19,9 +40,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/victorcarvajal/IdeaProjects/Framewok_Selenium_Behave_POM_Allure/features/pages",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/features/pages" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
