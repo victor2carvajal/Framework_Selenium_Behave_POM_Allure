@@ -1,7 +1,7 @@
 
-+---------------------------------------+
+
 # Framework_Selenium_Behave_POM_Allure
-+---------------------------------------+
+--------------------------------------------
 
 Let's to automate test cases of webapps using this framework written with Python. It is necessary to install the next elements: 
 
