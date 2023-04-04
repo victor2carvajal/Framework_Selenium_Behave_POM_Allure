@@ -19,4 +19,4 @@ To execute test cases, use this command:
 To see allure-report, use this command: 
 - Allure serve allure-report
 
-For more information and description of the framework, feel free to check the [Wiki](wiki) of this repository 
+For more information and description of the framework, feel free to check the [Wiki](Framework_Selenium_Behave_POM_Allure) of this repository 
