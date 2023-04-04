@@ -1,10 +1,10 @@
 from behave import *
 from selenium import webdriver
-from features.pages.home_page import HomePage
-from features.pages.product_page import ProductPage
-from features.pages.cart_page import CartPage
-from features.messages import verify_messages
-from features.utils import constant
+from pages.home_page import HomePage
+from pages.product_page import ProductPage
+from pages.cart_page import CartPage
+from messages import verify_messages
+from utils import constant
 
 
 @given(u'the user is at "{home_page}"')
